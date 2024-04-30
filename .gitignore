@@ -1,1 +1,24 @@
-## Getting Started!
+# Ignore logs and databases!
+*.log       # Ignore log files!
+*.sqlite    # Ignore SQLite database files!
+*.key       # Ignore key files!
+*.config    # Ignore configuration files!
+
+# Ignore environment-specific files!
+.vscode/        # Ignore Visual Studio Code workspace settings!
+/api-keys       # Ignore API keys or sensitive information!
+/ssh-keys       # Ignore SSH keys!
+/config-locks   # Ignore configuration lock files!
+
+# Ignore incomplete projects!
+/docker-projects       # Ignore incomplete Docker projects!
+/home-automation       # Ignore incomplete home automation projects!
+/pentesting-custom     # Ignore incomplete penetration testing projects!
+
+# Ignore system files specific to Windows!
+# Windows system files!
+Thumbs.db   # Ignore Windows thumbnail cache files!
+
+# Ignore system files specific to macOS!
+# macOS system files!
+.DS_Store   # Ignore macOS Finder metadata files!
