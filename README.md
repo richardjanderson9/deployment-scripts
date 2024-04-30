@@ -1,4 +1,69 @@
-# Deployment Scripts for All Projects
+# Deployment Scripts
 
-## Introduction
-This script builds the deployment areas for personal projects.
+These scripts are designed to simplify the process of setting up and managing software installations on your system.
+
+## Contents
+
+1. [Description](#description)
+2. [Usage](#usage)
+3. [Scripts](#scripts)
+    - [get-started.sh](#get-startedsh)
+    - [update.sh](#updatesh)
+    - [general_tools.sh](#general_toolssh)
+    - [docker.sh](#dockersh)
+
+## Description
+
+This repository contains a set of scripts to automate the installation of system updates, general tools, and Docker on your system. Each script provides clear instructions and automates the installation process to make it quick and easy.
+
+## Usage
+
+To use these scripts, follow these steps:
+
+1. Clone this repository to your local machine:
+
+    ```
+    git clone https://github.com/richardjanderson9/deployment-scripts
+    ```
+
+2. Navigate to the cloned directory:
+
+    ```
+    cd deployment-scripts
+    ```
+
+3. Make the scripts executable:
+
+    ```
+    chmod +x get-started.sh
+    cd scripts
+    chmod +x update.sh general_tools.sh docker.sh
+    ```
+
+4. Run the `get-started.sh` script:
+
+    ```
+    cd ..
+    ./get-started.sh
+    ```
+
+    Follow the prompts to select which components you want to install.
+
+## Scripts
+
+### get-started.sh
+
+This script serves as an entry point and guides you through the process of selecting which components you want to install. It prompts you to choose from system updates, general tools, and Docker.
+
+### update.sh
+
+This script updates your system by running `apt-get update` and `apt-get upgrade -y` commands to ensure that your system packages are up to date.
+
+### general_tools.sh
+
+This script installs a set of commonly used general tools, including `tree`, `nmap`, `net-tools`, `speedtest-cli`, `python3.12`, `curl` and `htop`.
+
+### docker.sh
+
+This script installs Docker on your system by setting up the necessary repositories and installing Docker CE, Docker CE CLI, and containerd.io using `apt-get`.
+
