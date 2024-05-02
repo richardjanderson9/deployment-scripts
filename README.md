@@ -2,21 +2,20 @@
 
 These scripts are designed to simplify the process of setting up and managing software installations on your system.
 
-## Contents
-
-1. [Description](#description)
-2. [Usage](#usage)
-3. [Scripts](#scripts)
-    - [get-started.sh](#get-startedsh)
-    - [update.sh](#updatesh)
-    - [general_tools.sh](#general_toolssh)
-    - [docker.sh](#dockersh)
-
 ## Description
 
 This repository contains a set of scripts to automate the installation of system updates, general tools, and Docker on your system. Each script provides clear instructions and automates the installation process to make it quick and easy.
 
-## Usage
+## Usage (Automated)
+
+> [!WARNING]  
+> This could be dangerous.
+
+```
+curl https://raw.githubusercontent.com/richardjanderson9/deployment-scripts/main/automated.sh
+```
+
+## Usage (Manual)
 
 To use these scripts, follow these steps:
 
@@ -49,11 +48,21 @@ To use these scripts, follow these steps:
 
     Follow the prompts to select which components you want to install.
 
-## Scripts
+## Scripts (Main)
+
+### automated.sh
+
+Automates installation selection: choose system updates, general tools, or Docker. Input numbers for components, tool handles installation.
 
 ### get-started.sh
 
 This script serves as an entry point and guides you through the process of selecting which components you want to install. It prompts you to choose from system updates, general tools, and Docker.
+
+### project-cleanup.sh
+
+This script removes any files included all other configured via 'get-started.sh'. (Including Docker!)
+
+## Scripts (Components)
 
 ### update.sh
 
@@ -61,7 +70,7 @@ This script updates your system by running `apt-get update` and `apt-get upgrade
 
 ### general_tools.sh
 
-This script installs a set of commonly used general tools, including `tree`, `nmap`, `net-tools`, `speedtest-cli`, `python3.12`, `curl` and `htop`.
+This script installs a set of commonly used general tools, including `tree`, `nmap`, `net-tools`, `speedtest-cli`, `python3.11`, `curl` and `htop`.
 
 ### docker.sh
 

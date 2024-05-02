@@ -3,6 +3,7 @@
 *.sqlite    # Ignore SQLite database files!
 *.key       # Ignore key files!
 *.config    # Ignore configuration files!
+*.prckey    # Ignore private key files!
 
 # Ignore environment-specific files!
 .vscode/        # Ignore Visual Studio Code workspace settings!
