@@ -6,12 +6,6 @@ if [ "$EUID" -eq 0 ]; then
     exit 1
 fi
 
-## Check if script is run as root!
-if [ "$EUID" -eq 0 ]; then
-    echo "Warning: This script should not be run as root. Please run it as a regular user."
-    exit 1
-fi
-
 ## Set Variables!
 github_profile="https://github.com/richardjanderson9/" ## Github Profile Link!
 github_repository="deployment-scripts" ## Github Repository Name!
