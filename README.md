@@ -12,7 +12,7 @@ This repository contains a set of scripts to automate the installation of system
 > This could be dangerous.
 
 ```
-curl https://raw.githubusercontent.com/richardjanderson9/deployment-scripts/main/automated.sh
+curl -sSL https://raw.githubusercontent.com/richardjanderson9/deployment-scripts/main/automated.sh | bash
 ```
 
 ## Usage (Manual)
@@ -22,7 +22,7 @@ To use these scripts, follow these steps:
 1. Clone this repository to your local machine:
 
     ```
-    git clone https://github.com/richardjanderson9/deployment-scripts
+    git clone https://github.com/richardjanderson9/deployment-scripts.git
     ```
 
 2. Navigate to the cloned directory:
