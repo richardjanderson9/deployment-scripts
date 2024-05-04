@@ -15,6 +15,7 @@
 /docker-projects       # Ignore incomplete Docker projects!
 /home-automation       # Ignore incomplete home automation projects!
 /pentesting-custom     # Ignore incomplete penetration testing projects!
+/pentesting-exploit    # Ignore incomplete penetration exploit (CVE-x-x)!
 
 # Ignore system files specific to Windows!
 # Windows system files!
